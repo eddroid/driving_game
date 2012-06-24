@@ -64,3 +64,6 @@
 
 .right, .left, .forward {
   width: 30px; }
+
+.firstRow {
+  padding-top: 10px; }

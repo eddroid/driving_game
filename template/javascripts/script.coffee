@@ -25,7 +25,7 @@ $(document).ready ->
   loop
     n = Math.ceil(Math.random() * 2)
     break if n != current_idx
-  $('#next').attr('href', 'level' + n + '.html#anchor')
+  $('#next').attr('href', 'level' + n + '.html')
 
   $('#wrong').bind 'click', (event) =>
     $('#sound_wrong')[0].play()

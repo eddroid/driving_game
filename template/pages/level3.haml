@@ -6,10 +6,7 @@
   %link(rel='stylesheet' type='text/css' href='facebox/facebox.css')
 %body
   .container-fluid
-    .hero-unit
-      %h2 Retro-Educational Driving Game
-      %p This is the description of this retro-educational driving game.
-    .row.center
+    .row.center.firstRow
       %p
         You want to turn <b>LEFT</b>.
         %img(src='images/left.png' class='left')
@@ -38,7 +35,7 @@
           Game Developers Guild Hackathon June 23-24, 2012
 
     #boom.hidden
-      %p Nope!
+      %p Nope. You must yield to the person on your right AND to the person going straight.
         
     %audio(id='sound_wrong')
       %source(src='audio/wrong.wav' type='audio/wav')

@@ -40,7 +40,7 @@
         break;
       }
     }
-    $('#next').attr('href', 'level' + n + '.html#anchor');
+    $('#next').attr('href', 'level' + n + '.html');
     return $('#wrong').bind('click', function(event) {
       return $('#sound_wrong')[0].play();
     });

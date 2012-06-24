@@ -6,9 +6,7 @@
   %link(rel='stylesheet' type='text/css' href='facebox/facebox.css')
 %body
   .container-fluid
-    .hero-unit
-      %h2 Retro-Educational Driving Game
-    .row.center
+    .row.center.firstRow
       %p
         You want to turn <b>RIGHT</b>
         %img(src='images/right.png' class='right')
@@ -34,7 +32,7 @@
           Game Developers Guild Hackathon June 23-24, 2012
 
     #boom.hidden
-      %p Nope!
+      %p Nope. You do not have to yield because you are turning right. Otherwise, you would have to yield.
 
     %audio(id='sound_wrong')
       %source(src='audio/wrong.wav' type='audio/wav')
