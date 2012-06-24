@@ -28,8 +28,8 @@
 
 .greenCar {
   position: absolute;
-  top: 290px;
-  left: 440px;
+  top: 0px;
+  left: 200px;
   -webkit-transition-duration: 2s;
   transition-timing-function: ease-in; }
 

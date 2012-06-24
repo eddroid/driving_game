@@ -10,7 +10,7 @@
       'left': '320px'
     });
     $('#greenCar').delay(2000).css({
-      'top': '390px'
+      'top': '90px'
     });
     $.facebox.settings.opacity = 0.2;
     $('a[rel*=facebox]').facebox();
