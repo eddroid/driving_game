@@ -8,13 +8,12 @@
   .container-fluid
     .hero-unit
       %h2 Retro-Educational Driving Game
-      %p This is the description of this retro-educational driving game.
     .row.center
       %p You want to turn LEFT.
     .row
       .topButtons
         %img(src='images/go.png' class='icon')
-        %a(class='btn btn-large' href='#boom' rel='facebox')
+        %a(class='btn btn-large' href='#boom' rel='facebox' id='wrong')
           Go
         .spacer(style='width:100px')
         %img(src='images/yield.png' class='icon')
@@ -35,6 +34,9 @@
 
     #boom.hidden
       %p Nope!
+
+    %audio(id='sound_wrong')
+      %source(src='audio/wrong.wav' type='audio/wav')
 
   %script(type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
   %script(type='text/javascript' src='http://current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.js')

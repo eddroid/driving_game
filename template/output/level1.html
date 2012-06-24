@@ -9,7 +9,6 @@
   <div class='container-fluid'>
     <div class='hero-unit'>
       <h2>Retro-Educational Driving Game</h2>
-      <p>This is the description of this retro-educational driving game.</p>
     </div>
     <div class='row center'>
       <p>You want to turn RIGHT.</p>
@@ -22,7 +21,7 @@
         </a>
         <div class='spacer' style='width:100px'></div>
         <img class='icon' src='images/yield.png' />
-        <a class='btn btn-large' href='#boom' rel='facebox'>
+        <a class='btn btn-large' href='#boom' id='wrong' rel='facebox'>
           Yield
         </a>
       </div>
@@ -45,6 +44,9 @@
     <div class='hidden' id='boom'>
       <p>Nope!</p>
     </div>
+    <audio id='sound_wrong'>
+      <source src='audio/wrong.wav' type='audio/wav'></source>
+    </audio>
   </div>
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
   <script src='http://current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.js' type='text/javascript'></script>
