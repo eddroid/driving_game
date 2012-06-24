@@ -1,7 +1,19 @@
 $(document).ready ->
-  $('#blueCar').delay(2000).css({'top': '320px' })
-  $('#whiteCar').delay(2000).css({'left': '320px' })
-  $('#greenCar').delay(2000).css({'top': '90px' })
+  $('#blueCar').delay(1000).queue(->
+    $(this).css({'top': '320px' })
+  )
+  $('#whiteCar').delay(1000).queue(->
+    $(this).css({'left': '320px' })
+  )
+  $('#greenCar').delay(1000).queue(->
+        $(this).css({'top': '90px' })
+  )
+  $('#redCar').delay(1000).queue(->
+        $(this).css({'left': '100px' })
+  )
+  $('#purpleCar').delay(5000).queue(->
+    $(this).css({'top': '410px' })
+  )
 
   $.facebox.settings.opacity = 0.2
   $('a[rel*=facebox]').facebox()
@@ -14,4 +26,7 @@ $(document).ready ->
     n = Math.ceil(Math.random() * 2)
     break if n != current_idx
   $('#next').attr('href', 'level' + n + '.html#anchor')
+
+  $('#wrong').bind 'click', (event) =>
+    $('#sound_wrong')[0].play()
 

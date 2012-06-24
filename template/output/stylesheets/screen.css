@@ -1,6 +1,9 @@
 .center {
   text-align: center;
   margin: 0px auto; }
+  .center .begin {
+    width: 50px;
+    margin-top: 10px; }
 
 .topButtons {
   text-align: center;
@@ -10,26 +13,41 @@
 
 .intersection {
   position: relative;
-  width: 500px; }
+  width: 500px;
+  overflow: hidden; }
 
-.blueCar {
+#blueCar {
   position: absolute;
-  top: 420px;
+  top: 520px;
   left: 260px;
   transition-timing-function: ease-in;
   -webkit-transition-duration: 2s; }
 
-.whiteCar {
+#whiteCar {
   position: absolute;
   top: 200px;
-  left: 420px;
+  left: 520px;
   -webkit-transition-duration: 2s;
   transition-timing-function: ease-in; }
 
-.greenCar {
+#greenCar {
   position: absolute;
-  top: 0px;
+  top: -100px;
   left: 200px;
+  -webkit-transition-duration: 2s;
+  transition-timing-function: ease-in; }
+
+#redCar {
+  position: absolute;
+  top: 260px;
+  left: -100px;
+  -webkit-transition-duration: 2s;
+  transition-timing-function: ease-in; }
+
+#purpleCar {
+  position: absolute;
+  top: 520px;
+  left: 260px;
   -webkit-transition-duration: 2s;
   transition-timing-function: ease-in; }
 
@@ -38,3 +56,8 @@
 
 .spacer {
   display: inline-block; }
+
+.rules {
+  text-align: left;
+  width: 400px;
+  margin: 0px auto; }

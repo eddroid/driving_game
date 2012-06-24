@@ -2,15 +2,32 @@
 (function() {
 
   $(document).ready(function() {
-    var current_idx, n, url;
-    $('#blueCar').delay(2000).css({
-      'top': '320px'
+    var current_idx, n, url,
+      _this = this;
+    $('#blueCar').delay(1000).queue(function() {
+      return $(this).css({
+        'top': '320px'
+      });
     });
-    $('#whiteCar').delay(2000).css({
-      'left': '320px'
+    $('#whiteCar').delay(1000).queue(function() {
+      return $(this).css({
+        'left': '320px'
+      });
     });
-    $('#greenCar').delay(2000).css({
-      'top': '90px'
+    $('#greenCar').delay(1000).queue(function() {
+      return $(this).css({
+        'top': '90px'
+      });
+    });
+    $('#redCar').delay(1000).queue(function() {
+      return $(this).css({
+        'left': '100px'
+      });
+    });
+    $('#purpleCar').delay(5000).queue(function() {
+      return $(this).css({
+        'top': '410px'
+      });
     });
     $.facebox.settings.opacity = 0.2;
     $('a[rel*=facebox]').facebox();
@@ -23,7 +40,10 @@
         break;
       }
     }
-    return $('#next').attr('href', 'level' + n + '.html#anchor');
+    $('#next').attr('href', 'level' + n + '.html#anchor');
+    return $('#wrong').bind('click', function(event) {
+      return $('#sound_wrong')[0].play();
+    });
   });
 
 }).call(this);

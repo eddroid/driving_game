@@ -14,7 +14,7 @@
     .row
       .topButtons
         %img(src='images/go.png' class='icon')
-        %a(class='btn btn-large' href='#boom' rel='facebox')
+        %a(class='btn btn-large' href='#boom' rel='facebox' id='wrong')
           Go
         .spacer(style='width:100px')
         %img(src='images/yield.png' class='icon')
@@ -24,9 +24,11 @@
       .intersection.center
         %a(name='anchor')
         %img(src='images/intersection.png')
-        %img(src='images/blue_car_down.png' class='blueCar' id='blueCar')
-        %img(src='images/white_car_right.png' class='whiteCar hidden' id='whiteCar')
-        %img(src='images/green_car_up.png' class='greenCar' id='greenCar')
+        %img(src='images/blue_car_down.png' id='blueCar')
+        %img(src='images/white_car_right.png' id='whiteCar')
+        %img(src='images/green_car_up.png' id='greenCar')
+        %img(src='images/red_car_left.png' id='redCar')
+        %img(src='images/purple_car_down.png' id='purpleCar')
 
     .navbar(style='padding-top: 10px; margin-bottom: 0px')
       .navbar-inner
@@ -35,6 +37,9 @@
 
     #boom.hidden
       %p Nope!
+        
+    %audio(id='sound_wrong')
+      %source(src='audio/wrong.wav' type='audio/wav')
 
   %script(type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
   %script(type='text/javascript' src='http://current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.js')
@@ -44,4 +49,3 @@
     %script(type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js')
     %script(type='text/javascript' src='javascripts/ie.js')
     %link(rel='stylesheet' type='text/css' href='stylesheets/ie.css')
-

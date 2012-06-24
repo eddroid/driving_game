@@ -8,12 +8,21 @@
   .container-fluid
     .hero-unit
       %h2 Retro-Educational Driving Game
-      %p This is the description of this retro-educational driving game.
 
     .center
-      Welcome to Jurassic Park!
-      %a(id='next' href='level1.html')
-        %p Begin
+      %h3 Welcome to DriverGamer.com!
+      %br
+      %p To play, simply select the correct <b style='color: green'>GO</b> or <b style='color: red'>YIELD</b> button for each driving situation.
+      .rules
+        %p Driving rules:
+        %ul
+          %li Yield to person on right, except if turning right.
+          %li Yield to oncoming traffic when turning left.
+        %p Remember... the car on the <b>RIGHT</b> has <b>RIGHT-OF-WAY</b>.
+      %img(src='images/mclovin.jpg')
+      %br
+      %a(id='next' href='level1.html' class='begin btn btn-large')
+        Begin
 
     .navbar(style='padding-top: 10px; margin-bottom: 0px')
       .navbar-inner
