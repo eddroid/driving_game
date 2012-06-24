@@ -4,10 +4,10 @@
   $(document).ready(function() {
     var current_idx, n, url;
     $('#blueCar').delay(2000).css({
-      'top': '625px'
+      'top': '320px'
     });
     $('#whiteCar').delay(2000).css({
-      'left': '560px'
+      'left': '320px'
     });
     $('#greenCar').delay(2000).css({
       'top': '390px'

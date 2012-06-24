@@ -1,6 +1,6 @@
 $(document).ready ->
-  $('#blueCar').delay(2000).css({'top': '625px' })
-  $('#whiteCar').delay(2000).css({'left': '560px' })
+  $('#blueCar').delay(2000).css({'top': '320px' })
+  $('#whiteCar').delay(2000).css({'left': '320px' })
   $('#greenCar').delay(2000).css({'top': '390px' })
 
   $.facebox.settings.opacity = 0.2
