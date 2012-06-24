@@ -3,8 +3,9 @@
 
 .topButtons {
   text-align: center;
-  padding: 10px;
-  width: 110px; }
+  padding: 10px; }
+  .topButtons a {
+    width: 50px; }
 
 .blueCar {
   position: absolute;
@@ -15,7 +16,20 @@
 
 .whiteCar {
   position: absolute;
-  top: 495px;
+  top: 505px;
   left: 650px;
   -webkit-transition-duration: 2s;
   transition-timing-function: ease-in; }
+
+.greenCar {
+  position: absolute;
+  top: 290px;
+  left: 440px;
+  -webkit-transition-duration: 2s;
+  transition-timing-function: ease-in; }
+
+.icon {
+  width: 30px; }
+
+.spacer {
+  display: inline-block; }

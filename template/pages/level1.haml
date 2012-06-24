@@ -10,16 +10,20 @@
       %h2 Retro-Educational Driving Game
       %p This is the description of this retro-educational driving game.
     .row
-      .span1.offset5.topButtons
-        %a(class='btn' href='#')
-          Go
-        %a(class='btn' href='#boom' rel='facebox')
-          Stop
-    .row
       .span12.center
         %p You want to turn RIGHT.
     .row
+      .topButtons
+        %img(src='images/go.png' class='icon')
+        %a(class='btn btn-large' id='next')
+          Go
+        .spacer(style='width:100px')
+        %img(src='images/yield.png' class='icon')
+        %a(class='btn btn-large' href='#boom' rel='facebox')
+          Yield
+    .row
       .span12.center
+        %a(name='anchor')
         %img(src='images/intersection.png')
         %img(src='images/blue_car_down.png' class='blueCar' id='blueCar')
         %img(src='images/white_car_right.png' class='whiteCar' id='whiteCar')

@@ -12,25 +12,30 @@
       <p>This is the description of this retro-educational driving game.</p>
     </div>
     <div class='row'>
-      <div class='span1 offset5 topButtons'>
-        <a class='btn' href='#'>
+      <div class='span12 center'>
+        <p>You want to turn LEFT.</p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='topButtons'>
+        <img class='icon' src='images/go.png' />
+        <a class='btn btn-large' href='#boom' rel='facebox'>
           Go
         </a>
-        <a class='btn' href='#boom' rel='facebox'>
-          Stop
+        <div class='spacer' style='width:100px'></div>
+        <img class='icon' src='images/yield.png' />
+        <a class='btn btn-large' id='next'>
+          Yield
         </a>
       </div>
     </div>
     <div class='row'>
       <div class='span12 center'>
-        <p>You want to turn RIGHT.</p>
-      </div>
-    </div>
-    <div class='row'>
-      <div class='span12 center'>
+        <a name='anchor'></a>
         <img src='images/intersection.png' />
         <img class='blueCar' id='blueCar' src='images/blue_car_down.png' />
-        <img class='whiteCar' id='whiteCar' src='images/white_car_right.png' />
+        <img class='whiteCar hidden' id='whiteCar' src='images/white_car_right.png' />
+        <img class='greenCar' id='greenCar' src='images/green_car_up.png' />
       </div>
     </div>
     <div class='navbar' style='padding-top: 10px; margin-bottom: 0px'>
