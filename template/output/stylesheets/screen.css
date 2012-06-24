@@ -61,3 +61,6 @@
   text-align: left;
   width: 400px;
   margin: 0px auto; }
+
+.right, .left, .forward {
+  width: 30px; }
