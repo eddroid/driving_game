@@ -1,0 +1,21 @@
+.center {
+  text-align: center; }
+
+.topButtons {
+  text-align: center;
+  padding: 10px;
+  width: 110px; }
+
+.blueCar {
+  position: absolute;
+  top: 714px;
+  left: 500px;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 2s; }
+
+.whiteCar {
+  position: absolute;
+  top: 495px;
+  left: 650px;
+  -webkit-transition-duration: 2s;
+  transition-timing-function: ease-in; }

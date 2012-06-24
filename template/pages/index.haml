@@ -1,0 +1,29 @@
+!!! 5
+%head
+  %title Retro-Educational Driving Game
+  %link(rel='stylesheet' type='text/css' href='http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css')
+  %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
+  %link(rel='stylesheet' type='text/css' href='facebox/facebox.css')
+%body
+  .container-fluid
+    .hero-unit
+      %h2 Retro-Educational Driving Game
+      %p This is the description of this retro-educational driving game.
+
+    .center
+      Welcome to Jurassic Park!
+      %a(class='next' href='level1.html')
+        %p Begin
+
+    .navbar(style='padding-top: 10px; margin-bottom: 0px')
+      .navbar-inner
+        .container(style="float: right; line-height: 40px")
+          Game Developers Guild Hackathon June 23-24, 2012
+
+    #boom.hidden
+      %p Nope!
+
+  %script(type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+  %script(type='text/javascript' src='http://current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.js')
+  %script(type='text/javascript' src='javascripts/script.js')
+  %script(type='text/javascript' src='facebox/facebox.js')
